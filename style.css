@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-image: var(--gray-9);
+  color: var(--gray-8);
+  font-style: var(--font-sans);
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+h2 {
+  margin: 0;
+  font-size: var(--font-size-5);
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin-inline: auto;
+  margin-block: var(--size-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+}
+
+.wrapper > * {
+  border-bottom: 1px solid var(--gray-3);
+}
+
+.wrapper > *:last-child {
+  border-bottom: none;
+}
+
+.card {
+  border-radius: var(--radius-2);
+  padding: var(--size-fluid-1);
+  box-shadow: var(--shadow-2);
+}
+
+.blue.box {
+  background-color: var(--indigo-9);
+  width: 50px;
+  height: 50px;
+}
+
+.red.box {
+  width: 25px;
+  height: 25px;
+  background-color: var(--red-9);
+}
+
+.meme {
+  width: 300px;
+  aspect-ratio: 1/1;
+}
+
+.row-1 > *,
+.row-2 > *,
+.row-3 > *,
+.row-4 > *,
+.row-5 > *,
+.row-6 > *,
+.row-7 > * {
+  margin-bottom: 20px;
+}
+
+.row-4 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.row-4 > h2 {
+  display: block;
+  width: 100%;
+}
+
+.ghost {
+  --font-size: 100px;
+  font-size: var(--font-size);
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.rabbit-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: var(--font-size-6);
+}
+
+.rabbit {
+  transition: opacity 0.2s;
+}
+
+.row-7 {
+  background-color: var(--gray-12);
+  color: var(--red-10);
+  font-size: 100px;
+}
+
+.row-7 > p {
+  margin: 0;
+}
+
+.bomb-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--red-10);
+}
+
+.bomb {
+  width: 24px;
+  aspect-ratio: 1/1;
+}
+
+.cancel-btn {
+  color: var(--gray-0);
+  background-image: var(--gradient-8);
+  border: 1px solid var(--blue-1);
+  text-shadow: 0 1px 0 var(--indigo-2);
+  padding: var(--size-1) var(--size-3);
+  font-size: var(--font-size-4);
+  margin-inline: auto;
+  display: block;
+  margin-top: var(--size-2);
+}
+
+.cancel-btn:hover {
+  background-image: var(--gradient-6);
+}
+
+.cancel-btn:active {
+  background-image: var(--gradient-7);
+}
+
+.firework-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: var(--gray-12);
+  font-size: 32px;
+  gap: 4px;
+}
+
+.firework {
+  width: 24px;
+  aspect-ratio: 1/1;
+}
